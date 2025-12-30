@@ -68,13 +68,19 @@ Since the Clalit pharmacy website doesn't provide a public API, this server uses
 git clone https://github.com/BorisSlutski/MCP.git
 
 # 2. Navigate to the project directory
-cd MCP
+cd MCP/clalit-pharmacy-mcp
 
 # 3. Install dependencies
 npm install
 
 # 4. Build the TypeScript
 npm run build
+```
+
+### Quick Install via npx (coming soon)
+
+```bash
+npx clalit-pharmacy-mcp
 ```
 
 ---
@@ -289,7 +295,7 @@ This project is licensed under the **MIT License** - see below for details:
 ```
 MIT License
 
-Copyright (c) 2024
+Copyright (c) 2024 Boris Slutski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
