@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.calendar-sync</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <!-- UPDATE: Replace with your actual path -->
+        <string>$HOME/local-meeting-reminder/venv/bin/python3</string>
+        <string>$HOME/local-meeting-reminder/calendar_sync.py</string>
+    </array>
+    
+    <!-- Run every 30 minutes -->
+    <key>StartInterval</key>
+    <integer>1800</integer>
+    
+    <!-- Also run at load -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>StandardOutPath</key>
+    <!-- UPDATE: Replace with your actual path -->
+    <string>$HOME/local-meeting-reminder/sync.log</string>
+    
+    <key>StandardErrorPath</key>
+    <!-- UPDATE: Replace with your actual path -->
+    <string>$HOME/local-meeting-reminder/sync-error.log</string>
+    
+    <key>WorkingDirectory</key>
+    <!-- UPDATE: Replace with your actual path -->
+    <string>$HOME/local-meeting-reminder</string>
+    
+    <!-- Keep alive if it crashes -->
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    
+    <!-- Environment variables -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>

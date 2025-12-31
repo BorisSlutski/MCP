@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.meeting-reminder</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <!-- UPDATE: Replace with your actual path -->
+        <string>$HOME/local-meeting-reminder/start.sh</string>
+    </array>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>StandardOutPath</key>
+    <!-- UPDATE: Replace with your actual path -->
+    <string>$HOME/local-meeting-reminder/reminder.log</string>
+    
+    <key>StandardErrorPath</key>
+    <!-- UPDATE: Replace with your actual path -->
+    <string>$HOME/local-meeting-reminder/reminder-error.log</string>
+    
+    <key>WorkingDirectory</key>
+    <!-- UPDATE: Replace with your actual path -->
+    <string>$HOME/local-meeting-reminder</string>
+</dict>
+</plist>

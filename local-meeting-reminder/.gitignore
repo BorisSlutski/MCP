@@ -1,0 +1,26 @@
+# OAuth credentials (sensitive - never commit!)
+credentials.json
+token.pickle
+
+# State files (generated at runtime)
+synced_events.json
+
+# Log files
+*.log
+sync.log
+sync-error.log
+reminder.log
+reminder-error.log
+
+# Virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Machine-specific plist files (use .example templates)
+com.boriss.calendar-sync.plist
+com.local.meeting-reminder.plist
