@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "clalit": {
+      "command": "node",
+      "args": ["/FULL/PATH/TO/MCP/clalit-mcp/dist/index.js"],
+      "env": {
+        "CLALIT_BROWSER_PROFILE": "/path/to/your/clalit-browser-profile",
+        "CLALIT_VISIBLE_FOR_AUTH": "1"
+      }
+    }
+  }
+}
